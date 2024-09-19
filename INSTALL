@@ -40,3 +40,9 @@ Telepítés és gyakran feltett kérdésekre https://doc.syspass.org
 Installation et Foire aux questions du https://doc.syspass.org
 
 ---
+
+Hints (added 20240919|Thomas Völker):
+* directory permissions are checked to be 0750, apart from directory group/owner
+* PHP version check extended to include PHP 8.3
+* DB user is required to have full privileges on mySQL (select from mysql.user). Using a distinct user and assigning privileges did not work. Using root worked.
+* DB must not exist

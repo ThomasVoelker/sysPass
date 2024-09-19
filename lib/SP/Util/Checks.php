@@ -49,6 +49,6 @@ final class Checks
     public static function checkPhpVersion()
     {
         return version_compare(PHP_VERSION, '7.3', '>=')
-            && version_compare(PHP_VERSION, '7.5', '<');
+            && version_compare(PHP_VERSION, '8.4', '<'); //Installation on ubuntu 24.04 LTS; PHP 8.3; Thomas Voelker @20240919
     }
 }

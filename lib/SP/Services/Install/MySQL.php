@@ -116,7 +116,7 @@ final class MySQL implements DatabaseSetupInterface
         try {
             // Comprobar si el usuario proporcionado existe
             $sth = $this->mysqlHandler->getConnectionSimple()
-                ->prepare('SELECT COUNT(*) FROM mysql.user WHERE `user` = ? AND (`host` = ? OR `host` = ?)');
+                ->prepare('SELECT COUNT(*) FROM mysql.user WHERE `user` = ? AND (`host` = ? OR `host` = ?)'); 
 
             $sth->execute([
                 $user,
